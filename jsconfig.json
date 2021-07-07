@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "target": "es2017",
+    "allowSyntheticDefaultImports": false,
+    "baseUrl": "./src/",
+    "paths": {
+      "@kongd/constants": ["common/constants"],
+      "@kongd/helpers": ["common/helpers"],
+      "@kongd/languages": ["common/languages"],
+      "@kongd/auth": ["common/auth"],
+      "@kongd/routes": ["routes"],
+      "@kongd/pages/*": ["pages/*"],
+      "@kongd/redux/*": ["redux/*"],
+      "@kongd/apis/*": ["apis/*"],
+      "@kongd/assets/*": ["shared/assets/*"],
+      "@kongd/containers/*": ["shared/containers/*"],
+      "@kongd/components/*": ["shared/components/*"],
+      "@kongd/styles/*": ["shared/styles/*"]
+    }
+  },
+  "exclude": ["node_modules", "dist", "build"]
+}

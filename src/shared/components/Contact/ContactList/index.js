@@ -1,0 +1,28 @@
+import React from 'react';
+
+import ContactCell from './ContactCell';
+
+const ContactList = ({
+  contactList,
+  addFavourite,
+  onContactSelect,
+  onSaveContact,
+  onDeleteContact,
+}) => {
+  return (
+    <div className="kd-contact-main-content">
+      {contactList.map((contact, index) => (
+        <ContactCell
+          key={index}
+          contact={contact}
+          onDeleteContact={onDeleteContact}
+          onSaveContact={onSaveContact}
+          addFavourite={addFavourite}
+          onContactSelect={onContactSelect}
+        />
+      ))}
+    </div>
+  );
+};
+
+export default ContactList;
